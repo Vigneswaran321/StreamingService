@@ -59,7 +59,7 @@ export default function Home() {
           }}
         >
           <iframe
-            src="https://www.youtube.com/embed/cOIRSOp3mB0?si=grU97zxAcR2M0p0X"
+            src="https://www.youtube.com/embed/wPV9FxeQXxI?si=pKgK5Ba4kIVd449X"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

@@ -69,7 +69,15 @@ export default function News() {
   );
 }
 
-function Tab({ label, active, onClick }) {
+function Tab({
+  label,
+  active,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
   return (
     <button
       onClick={onClick}
@@ -84,7 +92,7 @@ function Tab({ label, active, onClick }) {
   );
 }
 
-function NewsCard({ headline }) {
+function NewsCard({ headline }: { headline: string }) {
   return (
     <div className="p-4 bg-gray-900 rounded-lg">
       <h3 className="text-lg font-bold">{headline}</h3>

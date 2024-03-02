@@ -11,7 +11,11 @@ import pricingCards from "./libs/PricingCards";
 export default function Home() {
   return (
     <main className="flex min-h-screen h-fit flex-col items-center justify-center relative">
+      <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center"></div>
       <Navbar />
+      <Link href="/api/python">
+            <code className="font-mono font-bold">api/index.py</code>
+          </Link>
       <header
         id="home"
         className="flex flex-col-reverse md:flex-row w-full h-screen max-w-7xl items-center justify-center p-8 relative overflow-x-hidden"
@@ -41,7 +45,7 @@ export default function Home() {
         <div className="w-full h-2/4 md:h-full md:w-3/5 flex items-center justify-center relative -z-10">
           <Spline
             className="w-full flex scale-[.25] sm:scale-[.35] lg:scale-[.5] items-center justify-center md:justify-start"
-            scene="https://prod.spline.design/pvM5sSiYV2ivWraz/scene.splinecode"
+            scene="https://prod.spline.design/zLl9yMhWz2zud2YA/scene.splinecode"
           />
         </div>
       </header>
@@ -49,13 +53,15 @@ export default function Home() {
         id="video"
         className="h-full-screen w-full flex flex-col items-center justify-center gap-8 p-8"
       >
-        <h4 className="text-4xl md:text-5xl font-bold">24/7 LiveStream</h4>
+        <h3 className="text-4xl md:text-5xl font-bold">24/7 LiveStream</h3>
         <div
-          className="relative w-full h-0"
+          className="relative w-full h-0 "
           style={{
             paddingBottom: "56.25%",
             marginTop: "10px",
             marginBottom: "10px",
+            marginLeft: "4rem",
+            marginRight: "4rem",
           }}
         >
           <iframe
@@ -190,7 +196,7 @@ function Navbar() {
   return (
     <div className="w-full h-16 backdrop-filter backdrop-blur-xl bg-opacity-20 border-b flex items-center justify-center">
       <div className="max-w-7xl w-full flex items-center justify-between p-4">
-        <h6 className="font-bold">NewGenius</h6>
+        <h3 className="font-bold">NEWGENIUS</h3>
         <ul className="flex gap-8">
           <li>
             <Link
@@ -207,6 +213,9 @@ function Navbar() {
             >
               About
             </Link>
+          </li>
+          <li className="hover:text-fuchsia-500 transition-colors text-xs sm:text-base">
+            <Link href="/news">News</Link>
           </li>
           <li>
             <Link

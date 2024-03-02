@@ -13,9 +13,6 @@ export default function Home() {
     <main className="flex min-h-screen h-fit flex-col items-center justify-center relative">
       <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center"></div>
       <Navbar />
-      <Link href="/api/python">
-            <code className="font-mono font-bold">api/index.py</code>
-          </Link>
       <header
         id="home"
         className="flex flex-col-reverse md:flex-row w-full h-screen max-w-7xl items-center justify-center p-8 relative overflow-x-hidden"
@@ -31,7 +28,9 @@ export default function Home() {
             Say goodbye to overpriced headlines💸and hello to wallet-friendly
             updates!🚀Let&apos;s make headlines together!🌟
           </p>
-
+          <Link href="/api/python">
+            <code className="font-mono font-bold">api/index.py</code>
+          </Link>
           <div className="w-full flex items-center justify-center md:justify-start gap-4">
             <button className="w-48 h-12 text-sm sm:text-base rounded bg-white text-black hover:bg-fuchsia-700 hover:text-white transition-colors">
               Try Below!
